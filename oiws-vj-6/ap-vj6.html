@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrinkto-fit=no">
+	<title>OIWS - Vježba 6 - Bootstrap</title>
+	<link rel="icon" href="https://static.thenounproject.com/png/62704-200.png">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- jQuery and JS bundle w/ Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<style>
+		.slika {
+				height: 200px;
+				background:url('https://cdn.singulart.com/artworks/v2/cropped/17969/main/carousel/762927_871885b7e684b94cfa3c92a36fb17937.jpeg');
+				margin-bottom: 1em;
+		}
+		.navbar-brand {
+			margin-left:50%;
+		}
+		.navbar-collapse {
+			margin-right:5em;
+		}
+  </style>
+</head>
+<body class="bg-light">
+	<div class="jumbotron bg-primary text-light text-center" style="margin-bottom:0">
+		<!--<h1>Andy Warhol</h1>-->
+		<img height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Andy_Warhol_signature.svg/1200px-Andy_Warhol_signature.svg.png">
+		<h4>1928. - 1987.</h4>
+	</div>
+	
+	<!--navbar-collapse skriva navbar i zamjenjuje ga sa meni/hamburger ikonom na mobilnim uređajima i tabletima-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+		<a class="navbar-brand" href="#">Navigacijska traka</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+		</button>	
+		<div class="collapse navbar-collapse" id="collapsibleNavbar" >
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#warhol">Tko je Andy Warhol?</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#popart">Pop art</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#umjetnost">Umjetnost</a>
+			</li>  
+			<li class="nav-item">
+				<a class="nav-link" href="#impresum">Impresum</a>
+			</li>
+		</ul>
+		</div>  
+	</nav>
+	
+	<div class="container" style="padding-top:2em; padding-bottom:2em; text-align:justify;">
+		<div class="row">
+			<div class="col-sm-4" id="warhol">
+				<h2>Otac pop arta</h2>
+				<div class="slika"></div>
+				<p>Andy Warhol (ponegdje Andrew Warhola); (Pittsburgh, 6. kolovoza 1928. - New York, 22. veljače 1987.), američki slikar, dizajner i filmski stvaratelj rusinskog podrijetla.</p>
+			</div>
+			<div class="col-sm-8" id="popart">
+				<p>U prvoj polovici 60-ih godina postaje vodeća ličnost pop arta, umjetničkog pokreta koji se služi ikonografijom i tiskarskim tehnikama masovne kulture. Prikaze predmeta masovne potrošnje umnožava i izvodi u sitotisku (Campbell-juha, Coca Cola, Brillo sapuni). Kasnije uvećava portrete tzv. super-zvijezda, prikazujući ih u smjelim kromatskim kontrastima (Elvis Presley, Marilyn Monroe, Elizabeth Taylor...).</p>
+				<div class="slika"></div>
+			</div>
+			<div class="col-sm-12" id="umjetnost">
+				<h2>Anything goes glavna je krilatica pop arta</h2>
+				<h5>Pravi vizionar</h5>
+				<div class="slika"></div>
+				<p>Američki umjetnik Andy Warhol glavni je predstavnik pokreta pop art i njegova je svojevrsna ikona i dandanas. Taj ekscentrični umjetnik karijeru je počeo nakon studija dizajna u New Yorku, gradu koji će postati njegova vječna fascinacija i inspiracija, ilustrirajući reklame. Počeo je sa slikama junaka stripova, a vidjevši da nije jedini koji u toj temi vidi motiv za svoje radove, počinje slikati svakodnevne objekte – poput poznate crveno-bijele limenke juhe od rajčice Campbell soup, boce Coca-Cole ili pak inspiraciju pronalazi u glumici Marilyn Monroe.</p>
+				<br>
+				<h2>Svestrani umjetnik</h2>
+				<h5>Digitalna umjetnost</h5>
+				<div class="slika"></div>
+				<p>Kako je svoje radove izrađivao u brojnim tehnikama, tiskao ih je, fotografirao, izrađivao na svili, a bavio se i kiparstvom, filmom i glazbom, Warhol je prozvan i prvim svjetskim multimedijalnim umjetnikom. No nedavna otkrića sugeriraju još nešto – Warhol se još davne 1985. bavio i danas nezaobilaznom digitalnom umjetnošću.</p>
+				<p>Tada je, naime, u svoj atelijer uveo i prva računala, i to na poziv tvrtke Commodore International, koja je zamolila Warhola da eksperimentira s njihovim modelom Amiga 1000 kao potencijalnim medijem za svoj umjetnički izričaj.</p>
+				<p>Osmislio je i dva TV showa – Andy Warhol's TV, 1982. godine, i četiri godine poslije Andy Warhol's Fifteen Minutes za popularni MTV. Naslov drugog showa nastao je prema njegovoj glasovitoj izjavi iz 1967.: „U budućnosti će svatko biti slavan 15 minuta.“</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron bg-info text-center" style="margin-bottom:0" id="impresum">
+		<h4>Web stranicu izradila: Anamarija Papić</h4>
+		<h5>Izvori: Wikipedija, Modra lasta</h5>
+		Osnove izrade web stranica, Laboratorijska vježba 6, 2020.
+	</div>
+</body>
+</html>

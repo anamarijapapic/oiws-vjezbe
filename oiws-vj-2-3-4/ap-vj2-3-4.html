@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hr-HR">
+	<head>
+		<meta charset="UTF-8">
+		<title>OIWS - Vježba 2/3/4 - Anamarija Papić</title>
+		<style>
+		body {font-family: "Arial", Helvetica, sans-serif; 
+			  text-align:justify;}
+		h1 {text-align:center;
+			font-family: "Courier New", Courier, monospace; 
+			color:rgb(255, 0, 0);}
+		h2 {text-align:left;
+			text-decoration:underline;
+			font-style:oblique;}
+		p:first-letter {font-size:2em;} 
+		#identifikator {color:rgb(0, 128, 0);}
+		.klasa {color:rgb(30, 144, 255);
+				background-color:aliceblue;}
+		p.uvod {text-align:center;
+				font-variant:small-caps;
+				background-color:lightgray;}
+		#p4 {font-style:italic;
+			text-decoration-line:underline;
+			text-decoration-color:yellow;}
+		.isti {background-color:lightpink;}
+		abbr:before{content: "\201c";}
+		abbr:after{content: "\201d";}
+		
+		/* oblikovanje linka pseudoklasama */
+		a:link {color:blue;}
+		a:visited {color:purple;}
+		a:link:hover {color:lightblue;}
+		a:visited:hover {color:lightpink;}
+		
+		p q {font-style:italic;
+			color:magenta;
+			font-weight:bold;
+			}
+		
+		p > q > abbr {color:teal;}
+		table{width:65%;}
+		table, td {border: 1px solid black;
+				  border-spacing:10px;
+				  border-collapse: collapse;
+				  background-color:lightyellow;}
+		td {padding: 5px;
+		   text-align: center;}
+		legend {background-color: rgb(221,160,221);
+			   color: #fff;
+			   padding: 10px 15px;}
+		fieldset{border: 1px solid rgb(221,160,221);
+				margin:11px;}
+		input:focus, textarea:focus{background-color: rgb(230,230,255);}
+		[type="submit"]{background-color: rgb(225,228,181);
+					   border:1px solid rgb(225,228,181);
+					   padding:11px;}
+		caption{background-color:lightslategray;
+			   color:white;
+			   padding:11px;
+			   font-weight:bold;
+			   font-size:1.5em;}
+		.pitanje{background-color:darkorchid;
+				color:#fff;}
+		.hvala{background-color:peachpuff;}
+		</style>
+	</head>
+	<body>
+		<!--oznaka na početku stranice-->
+		<a name="pocetak"/>
+		
+		<a href="http://www.google.hr">Google</a>
+		
+		<h1>Internet i web</h1>
+		<p class="uvod">Internet se može definirati na više načina. Internet je javno dostupna globalna paketna podatkovna mreža koja zajedno povezuje računala i računalne mreže ili mreža svih mreža. Internet čini world wide web, koji omogućuje svim korisnicima digitalno dijeljenje informacija. World Wide Web ili www je infrastruktura, odnosno svjetski medij podataka s pomoću kojega korisnici mogu čitati i pisati putem računala koji je spojen na internet.</p>
+		<h2>1. generacija</h2>
+		<p style="color:#FF8C00;">Prva generacija weba ili web 1.0 se smatra webom statičnog sadržaja (web of content), unutar kojeg se ljudi samo povezuju na web. Stranice su pisane HTML-om, a osnovni komunikacijski protokol je bio HTTP. Stranice su obično definirane sa okvirima (engl. frames), a za pozicioniranje elemenata na stranici koristile su se tablice, dok je navigacija ostvarena direktorijem poveznica.</p>
+		<h2>2. generacija</h2>
+		<p>Druga generacija weba ili web 2.0 se smatra webom komunikacije gdje se ljudi međusobno povezuju. Web više nije statičan, odnosno korisnicima je omogućeno i da oni doprinose stvaranju web sadržaja („read-write web”) čime se briše crta između uobičajenog izdavača sadržaja i korisnika. Web 2.0 započinje 2004.g., a obilježavaju ga razne društvene mreže (Facebook, Twitter, LinkedIn), blogovi, wiki stranice; korisnički doživljaj sučelja stranica je poboljšan, a web postaje otvoren i slobodan. Pojavljuju se razne nove tehnologije: 
+			<ul type="square">
+				<li>JavaScript</li>
+				<li>Document Object Model (DOM)</li>
+				<li>Ajax</li>
+				<li>Cascading Style Sheets (CSS)</li>
+				<li>Hypertext Markup Language (HTML)
+					<ol type="a">
+						<li>HTML 2 (1995)</li>
+						<li>HTML 3 (1997)</li>
+						<li>HTML 4 (1997)</li>
+						<li>HTML 5 (2014)</li>
+					</ol></li>
+				<li>eXtensible HTML (XHTML)</li>
+				<li>eXtensible Markup Language (XML)</li>
+				<li>eXtensible Stylesheet Language (XSL)</li>
+				<li>Flash</li>
+			</ul>
+		koje su omogućavale prezentaciju i isporuku web usluga bez problema web distribucije.
+		<br/><br/>
+			<q class="isti"><abbr title="Hypertext Markup Language">HTML</abbr> je opisni jezik za izradu hipertekstualnih dokumenata (izradu web stranica), a dokument HTML-a je tekstualna datoteka (.html). Osnovni elementi HTML-a su oznake HTML-a koje govore web pregledniku što će se prikazati na web stranici. Preglednik obrađuje kôd unutar dokumenta HTML-a i pritom ga prikazuje na pripadni način. HTML pruža statični prikaz sadržaja.</q>
+		</p>
+		<p>Kaskadni stilovi omogućuju oblikovanje HTML elemenata neovisno o samom sadržaju stranice pa je tako moguće definirati više vrsta stilova za jednu web stranicu. <q>Prije HTML 4 formatiranje stilova je bio dio HTML-a, no potom je prebačeno u <abbr title="Cascading Style Sheets">CSS</abbr> zbog jednostavnosti oblikovanja sadržaja, odnosno zbog odvajanja sadržaja i stila.</q> U specifikacijama HTML jezika, još se uvijek navode i atributi za formatiranje načina prikaza sadržaja, ali uz njih se obično navodi da je to zastarjeli način (engl. deprecated). Definicije stilova se nalaze unutar datoteka predlošci stilova (style sheets), a višestruke definicije stilova se potom spajaju u jedan stil (cascading).</p>
+		<h2>3. generacija</h2>
+		<p id="identifikator">Treću generacija weba (ili web konteksta), obilježava povezivanje web aplikacija kako bi se poboljšalo online korisničko iskustvo, a gdje i računala sudjeluju u stvaranju novih web sadržaja. Započinje 2010.g. Oglašavanje se prilagođava ponašanju korisnika, uvodi se inteligentno pretraživanje, preciznije se definira semantika podataka i servisa na webu, omogućuje se dublja analiza podataka odnosno sadržaja, veza i transakcija između ljudi i računala. Dolazi do stvaranja semantičkog weba i personalizacije sadržaja.</p>
+		<h2>4. generacija</h2>
+		<p id="p4">Četvrta web generacija se smatra webom stvari, mobilnim webom, koji se prilagođuje svom novom mobilnom okruženju, odnosno povezuje sve uređaje u stvarnom i virtualnom svijetu u stvarnom vremenu (real-time).</p>
+		<h2>5. generacija</h2>
+		<p class="klasa">Peta generacija weba predstavlja emotivni web, web misli (također se predstavlja i kao Open-Linked and Intelligent Web i kao Symbiotic web, read-write-execution-concurrency web). Web je još u fazi razvoja, a predstavlja povezani web koji komunicira sa nama kao što ljudi međusobno komuniciraju (kao osobni pomoćnik). Fokus weba pete generacije je na emocionalnoj interakciji između ljudi i računala (dnevna aktivnost se temelji na neurotehnologiji). Trenutni web je emotional free, odnosno web koji ne raspoznaje emocije i osjećaje osoba. Korištenjem slušalica korisnici će moći djelovati sa sadržajem koje djeluje sa njihovim emocijama ili promjenama u izrazima lica.</p>
+		<br/><br/>
+		<p class="isti">Web mjesto (engl. web site) je jedinstveno ime računala koje ima pridruženu barem jednu IP adresu (primjerice naziv.com, naziv.nesto.com, naziv). Web mjesto se može definirati i kao skup web stranica koji sadrži razne dokumente HTML-a, multimedijalne sadržaje, skripte i ostalo. Web stranice su međusobno povezane poveznicama, čime se ostvaruje hijerarhijska struktura skupa web stranica. Web aplikacija je složeniji skup stranica koji se temelji na specifičnoj programskoj i računalnoj podršci. Web aplikacija omogućuje pristup vlastitim podacima sa bilo koje lokacije koja je spojena na internet te je nije potrebno ručno instalirati, a uspješno radi na bilo kojem uređaju koji ima web preglednik i vezu prema internetu.</p>
+		
+		<form>
+		<table>
+			<caption>Tablica s formama</caption>
+			<tr>
+				<td rowspan="3" class="pitanje">Vaši osobni i kontakt podatci:</td>
+				<td><input type="text" name="imePrezime" placeholder="Ime i prezime:" required/></td>
+				<td>Datum rođenja:<br/><input type="date" name="datum"/></td>
+			</tr>
+			<tr>
+				<td><textarea name="adresa" rows="3" cols="40" placeholder="Upišite svoju adresu:"></textarea></td>
+				<td><input type="email" name="email" placeholder="Upišite svoj email:"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">Radni status: <select name="radniStatus">
+						<option value="zaposlen">zaposlen</option>
+						<option value="nezaposlen">nezaposlen</option>
+						<option value="učenik" disabled>učenik</option>
+						<option value="student" selected>student</option>
+						<option value="umirovljen">umirovljen</option></select>
+				</td>
+			</tr>
+			<tr>
+				<td class="pitanje">Želite li primati obavijesti s naše stranice?</td>
+				<td><input type="radio" name="obavijest" value="da"/>Da</td>
+				<td><input type="radio" name="obavijest" value="ne"/>Ne</td>
+			</tr>
+			<tr>
+				<td class="pitanje">Na koji način želite da Vas kontaktiramo?</td>
+				<td><input type="checkbox" name="kontakt" value="email"/>E-mail</td>
+				<td><input type="checkbox" name="kontakt" value="posta"/>Pošta</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="hvala"><fieldset>
+									<legend>Hvala na suradnji!</legend>
+									<input type="submit" value="Pošalji upisane informacije"/>
+								</fieldset>
+				</td>
+			</tr>
+		</table>
+		</form>
+
+		<br/>
+		<!--slika koja je poveznica vodi na početak stranice-->
+		<a href="#pocetak"><img src="https://www.nicepng.com/png/full/255-2558201_top-arrow-png.png" alt="Povratak na početak" title="Povratak na početak stranice" style="width:130px;height:130px;"/></a>
+		<br/>
+		
+		<hr/>
+		Tekst korišten iz pdf datoteke "Predavanja" dostupne na Moodleu, autor: Haidi Božiković
+		<br/>Web stranicu izradila: <b>Anamarija Papić</b>
+	</body>
+</html>
